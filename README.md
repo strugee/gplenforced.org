@@ -8,6 +8,10 @@ Well, now there is:
 
 See the live version at https://gplenforced.org for more.
 
+## Contributing changes
+
+I much, much prefer to use GitHub Issues and Pull Requests for tracking issues and patches, as they allow discussion to remain centralized and public. However, I understand that using GitHub isn't an option for some people, so you may also send patches or issues to me at <alex@strugee.net>.
+
 ## Author
 
 AJ Jordan <alex@strugee.net>
