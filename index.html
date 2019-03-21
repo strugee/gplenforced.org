@@ -22,6 +22,7 @@
 		</script>
 		<noscript><p><img src="//piwik.strugee.net/piwik.php?idsite=8&rec=1" style="border:0;" alt="" /></p></noscript>
 		<!-- End Piwik Code -->
+		<script async defer src="main.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -33,10 +34,18 @@
 			<p>This project believes in not abusing GPL enforcement, so it will enforce the GPL in accord with the <a href="https://sfconservancy.org/copyleft-compliance/principles.html">Community-Oriented GPL Enforcement Principles</a>.</p>
 			<p>More information about complying with the GPL is available at <a href="https://copyleft.org/">copyleft.org</a>.</p>
 			<h2>I believe in GPL enforcement, too.</h2>
-			<p>You can add the badge to (for example) your GitHub README. Here's what it'll look like:</p>
-			<p><a href="https://gplenforced.org"><img src="https://img.shields.io/badge/GPL-enforced-blue.svg" alt="GPL enforced badge" title="This project enforces the GPL." /></a></p>
+			<p id="selector_paragraph" hidden>
+				Step 1 is to select the license you use:
+				<select id="selector">
+					<option value="gpl">GPL</option>
+					<option value="agpl">AGPL</option>
+					<option value="lgpl">LGPL</option>
+				</select>
+			</p>
+			<p><span id="y">Y</span>ou can add the badge to (for example) your GitHub README. Here's what it'll look like:</p>
+			<p><a href="https://gplenforced.org"><img id="license_img" src="https://img.shields.io/badge/GPL-enforced-blue.svg" alt="GPL enforced badge" title="This project enforces the GPL." /></a></p>
 			<p>And here's a snippet you can use to put this in your Markdown documents:</p>
-			<p><code>[![GPL enforced badge](https://img.shields.io/badge/GPL-enforced-blue.svg "This project enforces the GPL.")](https://gplenforced.org)</code></p>
+			<p><code>[![<span class="license">GPL</span> enforced badge](https://img.shields.io/badge/<span class="license">GPL</span>-enforced-blue.svg "This project enforces the <span class="license">GPL</span>.")](https://gplenforced.org)</code></p>
 			<p>You'll note that the badge links to this page and shows some text when you hover over it. The badge itself is SVG (i.e. a vector graphic) thanks to <a href="https://shields.io">shields.io</a>.</p>
 			<p>Want to do more? Donating to or helping the GPL compliance efforts of the <a href="https://www.fsf.org/licensing/compliance">Free Software Foundation</a>, <a href="https://sfconservancy.org/copyleft-compliance/">Software Freedom Conservancy</a> or <a href="http://gpl-violations.org/helping/">gpl-violations.org</a> is a great way to contribute to community GPL enforcement.</p>
 			<footer>
